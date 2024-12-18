@@ -16,10 +16,10 @@ export default function PositionedMenu() {
     <div className="relative inline-block text-black">
       {/* دکمه اصلی */}
       <button
-        className="flex items-center justify-center bg-white  border-black hover:text-backgroundbutton transition"
+        className="flex items-center justify-center bg-white border border-black hover:text-gray-700 transition"
         onClick={toggleMenu}
       >
-        <img src={flesh} className="mr-2 " />
+        <img src={flesh} className="mr-2" />
         امکانات و خدمات
       </button>
 
@@ -30,7 +30,7 @@ export default function PositionedMenu() {
             <li>
               <button
                 onClick={handleClose}
-                className="block w-full  px-4 py-2 text-gray-700 hover:text-backgroundbutton text-center transition"
+                className="block w-full px-4 py-2 text-gray-700 hover:text-gray-700 text-center transition"
               >
                 ارتباط
               </button>
@@ -38,7 +38,7 @@ export default function PositionedMenu() {
             <li>
               <button
                 onClick={handleClose}
-                className="block w-full text-center px-4 py-2 text-gray-700 hover:text-backgroundbutton transition"
+                className="block w-full text-center px-4 py-2 text-gray-700 hover:text-gray-700 transition"
               >
                 اتاق‌های خالی
               </button>
@@ -46,7 +46,7 @@ export default function PositionedMenu() {
             <li>
               <button
                 onClick={handleClose}
-                className="block w-full text-center px-4 py-2 text-gray-700 hover:text-backgroundbutton transition"
+                className="block w-full text-center px-4 py-2 text-gray-700 hover:text-gray-700 transition"
               >
                 رزرو
               </button>

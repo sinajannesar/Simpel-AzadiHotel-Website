@@ -1,13 +1,13 @@
 import logo from "../../assets/logo.png";
 import Amkanat from "./Amkanat";
-import khat from "../../assets/khat.png";
 import flesh from "../../assets/fleshsarpaien.png";
+import khat from "../../assets/khat.png";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdPersonOutline } from "react-icons/md";
 import { IoLanguage } from "react-icons/io5";
 import { useState } from "react";
 
-export default function Hedear() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
@@ -18,22 +18,17 @@ export default function Hedear() {
 
   return (
     <>
-      <div className=" flex justify-center">
-        <div className="flex justify-end space-x-[32px]">
-          <div className="flex mr-[200px] gap-[16px] mt-[29.2px]">
-            <div className="relative inline-block text-left">
-              {/* دکمه اصلی */}
-              <div>
-                <button
-                  className="flex items-center justify-center w-[64px] h-[40px] bg-white border-2 border-borderbuttowhait rounded-xl "
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  <img src={flesh} />
-                  <IoLanguage className="text-backgroundbutton w-[24px] h-[24px]" />
-                </button>
-              </div>
-
-              {/* منوی کشویی */}
+      <div className="flex justify-center py-4">
+        <div className="flex justify-between w-full max-w-screen-xl px-4">
+          <div className="flex items-center gap-4">
+            <div className="relative">
+              <button
+                className="flex items-center justify-center w-16 h-10 bg-white border-2 border-gray-200 rounded-xl"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <img src={flesh} alt="dropdown icon" />
+                <IoLanguage className="text-gray-700 w-6 h-6" />
+              </button>
               {isOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
                   <ul className="py-1">
@@ -42,7 +37,7 @@ export default function Hedear() {
                         <button
                           className="block w-full text-center px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-black transition"
                           onClick={() => {
-                            setIsOpen(false); // بستن منو
+                            setIsOpen(false);
                             console.log(`Language selected: ${lang.code}`);
                           }}
                         >
@@ -54,35 +49,31 @@ export default function Hedear() {
                 </div>
               )}
             </div>
-            <div className="flex gap-[8px] font-sans border-2 rounded-2xl items-center justify-center border-borderbuttowhait w-[135px] h-[40px]">
+            <div className="flex items-center gap-2 border-2 rounded-2xl border-gray-200 py-2 px-4">
               <p>ثبت نام</p>
-              <img src={khat} />
+              <img src={khat} alt="separator" />
               <p>ورود</p>
-              <MdPersonOutline className="text-backgroundbutton  w-[24px] h-[24px]" />
+              <MdPersonOutline className="text-gray-700 w-6 h-6" />
             </div>
-            <div className="flex gap-[8px] border-2 rounded-2xl items-center justify-center border-borderbuttowhait w-[124px] h-[42px]">
+            <div className="flex items-center gap-2 border-2 rounded-2xl border-gray-200 p-2">
               <p className="font-bold">۰۲۱-۲۷۲۰</p>
-              <MdOutlinePhone className="text-backgroundbutton h-[24px] w-[24px]" />
+              <MdOutlinePhone className="text-gray-700 h-6 w-6" />
             </div>
           </div>
-
-          <div className="flex  font-sans gap-[24px] mt-[38.2px] px-8 ">
-            <p className=" hover:text-backgroundbutton transition duration-300 ">
-              ارتباط با ما{" "}
+          <div className="flex items-center gap-6">
+            <p className="hover:text-gray-700 transition duration-300">
+              ارتباط با ما
             </p>
-            <p className=" hover:text-backgroundbutton transition duration-300">
+            <p className="hover:text-gray-700 transition duration-300">
               رویداد ها
             </p>
-            <p className=" hover:text-backgroundbutton transition duration-300">
-              {" "}
-              راهنمای گردشگری تهران{" "}
+            <p className="hover:text-gray-700 transition duration-300">
+              راهنمای گردشگری تهران
             </p>
-            <>
-              <Amkanat  />
-            </>
+            <Amkanat />
           </div>
-          <div className="flex justify-end">
-            <img src={logo} className="flex mt-[24px] " />
+          <div className="flex items-center">
+            <img src={logo} className="h-12" alt="logo" />
           </div>
         </div>
       </div>
