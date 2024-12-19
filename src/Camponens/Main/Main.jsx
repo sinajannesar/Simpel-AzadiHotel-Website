@@ -2,6 +2,7 @@ import FacilitiesGrid from "./FacilitiesGrid";
 import HeroSection from "./HeroSection";
 import HeroSection2 from "./HeroSection2";
 import NearbyAttractions from "./NearbyAttractions";
+import NearbyAttractionspart2 from "./NearbyAttractionspart2";
 import RoomCard from "./RoomCard";
 import TestimonialCard from "./TestimonialCard";
 export default function Main() {
@@ -13,6 +14,8 @@ export default function Main() {
       <FacilitiesGrid />
       <TestimonialCard />
       <NearbyAttractions/>
+      <NearbyAttractionspart2/>
+      
     </div>
   );
 }

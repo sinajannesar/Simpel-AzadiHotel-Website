@@ -63,8 +63,7 @@ export default function NearbyAttractions() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          pagination={{ clickable: true }}
-          className="px-4"
+          
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="flex flex-col items-center">
