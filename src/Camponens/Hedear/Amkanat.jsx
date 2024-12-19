@@ -16,7 +16,7 @@ export default function PositionedMenu() {
     <div className="relative inline-block text-black">
       {/* دکمه اصلی */}
       <button
-        className="flex items-center justify-center bg-white border border-black hover:text-gray-700 transition"
+        className="flex items-center justify-center bg-white  hover:text-gray-700 transition"
         onClick={toggleMenu}
       >
         <img src={flesh} className="mr-2" />

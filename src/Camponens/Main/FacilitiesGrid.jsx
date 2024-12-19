@@ -15,7 +15,7 @@ export default function FacilitiesGrid() {
         </h1>
 
         <div className=" md:flex">
-          <div className=" absolute mt-[24px] ml-[1013px]">
+          <div className=" absolute mt-6 ml-[1013px]">
             <div className=" absolute w-[486px] h-[62px] bg-gradient-to-b from-white  to-[#F6E9EE] rounded-br-xl rounded-l-xl  mt-[123px] ml-[103px] ">
               <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl">
                 <GoArrowLeft className="text-Whait text-[25px] ml-3" />
@@ -27,8 +27,8 @@ export default function FacilitiesGrid() {
 
             <img src={imgfa} alt="restoran" className=" rounded-xl" />
           </div>
-          <div className=" absolute ml-[280px] ">
-            <div className=" absolute  w-[486px] h-[62px] bg-gradient-to-b from-white  to-[#F6E9EE] rounded-br-xl rounded-l-xl  mt-[148px] ml-[103px]">
+          <div className=" absolute mt-6 ml-72 ">
+            <div className=" absolute  w-[486px] h-[62px] bg-gradient-to-b from-white  to-[#F6E9EE] rounded-br-xl rounded-l-xl  mt-[123px] ml-[103px]">
               <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl">
                 <GoArrowLeft className="text-Whait text-[25px] ml-3" />
               </button>
@@ -36,31 +36,47 @@ export default function FacilitiesGrid() {
                 بیزنس سنتر
               </p>
             </div>
-
-
-            <div>
-              <button></button>
-            </div>
-
             <img src={imgfa1} alt="bixnes" />
           </div>
 
-
-          
           <div className=" absolute ml-[1216px] mt-[232px]">
-            <button></button>
+            <div className=" absolute">
+              <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl ml-24 mt-[330px]">
+                <GoArrowLeft className="text-Whait text-[25px] ml-3" />
+              </button>
+            </div>
+
             <img src={imgfa2} alt="klop" />
           </div>
+
           <div className=" absolute mt-[232px] ml-[280px]">
-            <button></button>
+            <div className=" absolute">
+              <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl mt-[122px] ml-[102px]">
+                <GoArrowLeft className="text-Whait text-[25px] ml-3" />
+              </button>
+              
+            </div>
+
             <img src={imgfa3} alt="salon" />
           </div>
           <div className=" absolute mt-[440px] ml-[688px]">
-            <button></button>
+            <div className=" absolute">
+              <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl mt-[122px] ml-[102px]">
+                <GoArrowLeft className="text-Whait text-[25px] ml-3" />
+              </button>
+              
+            </div>
+
             <img src={imgfa4} alt="khadamat" />
           </div>
           <div className=" absolute mt-[440px] ml-[280px]">
-            <button></button>
+            <div className=" absolute">
+              <button className="w-[48px] h-[62px] bg-backgroundbutton rounded-tl-xl mt-[122px] ml-[102px]">
+                <GoArrowLeft className="text-Whait text-[25px] ml-3" />
+              </button>
+            
+            </div>
+
             <img src={imgfa5} alt="taxc" />
           </div>
         </div>

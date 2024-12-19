@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+
+      spacing:{
+        'swiper-pagination': '40px',
+      },
+
       fontFamily: {
         'irancell': ['Irancell', 'sans'],
         'irancell-bold': ['IrancellBold', 'sans'],
