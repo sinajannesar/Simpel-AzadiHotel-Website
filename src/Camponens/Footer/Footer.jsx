@@ -74,7 +74,6 @@ export default function Footer() {
         <FaTelegram className="text-backgroundbutton"/>
         <SiAparat className="text-backgroundbutton"/>
         </div>
-        
       </div>
     </div>
   );

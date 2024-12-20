@@ -51,7 +51,7 @@ export default function TestimonialSlider() {
         spaceBetween={48}
         slidesPerView={2}
         pagination={{ clickable: true }}
-        className=" px-4 "
+        className=" mt-swiper-pagination"
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="flex justify-center">
