@@ -61,15 +61,23 @@ export default function Header() {
             </div>
           </div>
           <div className="flex items-center gap-6">
-            <p className="hover:text-gray-700 transition duration-300">
-              ارتباط با ما
-            </p>
-            <p className="hover:text-gray-700 transition duration-300">
-              رویداد ها
-            </p>
-            <p className="hover:text-gray-700 transition duration-300">
-              راهنمای گردشگری تهران
-            </p>
+            <a href="#">
+              <p className="hover:text-gray-700 transition duration-300">
+                ارتباط با ما
+              </p>
+            </a>
+            <a href="#">
+              <p className="hover:text-gray-700 transition duration-300">
+                رویداد ها
+              </p>
+            </a>
+
+            <a href="#">
+              <p className="hover:text-gray-700 transition duration-300">
+                راهنمای گردشگری تهران
+              </p>
+            </a>
+
             <Amkanat />
           </div>
           <div className="flex items-center">

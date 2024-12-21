@@ -39,20 +39,20 @@ export default function TestimonialSlider() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-10">
+    <div className="max-w-7xl mx-auto py-10">
       {/* عنوان صفحه */}
       <h1 className="font-bold text-[40px] flex justify-center mt-[660px] mb-10">
         دست‌ نوشته‌های مهمانان
       </h1>
-
+<div></div>
       {/* اسلایدر */}
       <Swiper
         modules={[Pagination]}
         spaceBetween={48}
         slidesPerView={2}
-        pagination={{ clickable: true ,
-        }}
-        className=""
+        pagination={{ clickable: true }}
+        className=" 
+        "
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="flex justify-center">
@@ -79,7 +79,7 @@ export default function TestimonialSlider() {
               </div>
             </div>
             <div className=" absolute -mt-[360px] m-11">
-              <img src={testimonial.stiker} alt="img" className="  " />
+              <img src={testimonial.stiker} alt="img" className="" />
             </div>
           </SwiperSlide>
         ))}

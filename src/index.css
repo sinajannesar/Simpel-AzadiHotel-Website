@@ -3,4 +3,12 @@
 @tailwind utilities;
 
  
+
+.swiper-pagination-bullet {
+    @apply w-4 h-4 bg-gray-500;  
+  }
+  
+  .swiper-pagination-bullet-active {
+    @apply bg-blue-500; 
+  }
   
